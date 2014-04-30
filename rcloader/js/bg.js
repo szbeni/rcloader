@@ -254,10 +254,11 @@ var scriptLoader = new function(){
         var allScripts = "";
         for(var name in this.scripts){
             allScripts += this.scripts[name];
+	    console.log(name, this.scripts[name]?this.scripts[name].length:0);
         }
         //compare checksums
         var checksum = md5(allScripts);
-        //console.log(checksum);
+        console.log(checksum);
         if(checksum === scriptList['checksum']){
             return true;
         }

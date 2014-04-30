@@ -47,3 +47,4 @@ var addStyle = function(style){
 
 addStyle(fadein);
 window.addEventListener("beforeunload",function() { addStyle(fadeout); }, false);
+
