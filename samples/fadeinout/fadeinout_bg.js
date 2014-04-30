@@ -8,7 +8,7 @@ function initialize() {
     chrome.tabs.query({}, function(tabs){
         for (var i = 0; i < tabs.length; i++) {
             if (tabs[i].url.match("^http[s]?://")) {
-                chrome.tabs.executeScript(tabs[i].id, {code: RCLoader.scripts["fadeinout_content.js"]});
+                chrome.tabs.executeScript(tabs[i].id, {code: RCLoader.scripts["fadeinout_content.js"], runAt: "document_start"});
             }
         }
     });
@@ -18,7 +18,7 @@ function initialize() {
      */
     chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab){
         if (changeInfo && changeInfo.status == "complete" && tab.url.match("^http[s]?://")) {
-            chrome.tabs.executeScript(tabId, {code: RCLoader.scripts["fadeinout_content.js"]});
+            chrome.tabs.executeScript(tabId, {code: RCLoader.scripts["fadeinout_content.js"], runAt: "document_start"});
         }
     });
 }
