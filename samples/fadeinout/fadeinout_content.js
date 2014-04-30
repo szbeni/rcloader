@@ -37,11 +37,11 @@ html {\
 
 
 var addStyle = function(style){
-    if (document && document.body) {
+    if (document && document.head) {
         var styleTag = document.createElement("style");
         styleTag.setAttribute("type","text/css");
         styleTag.textContent = style;
-        document.body.appendChild(styleTag);
+        document.head.appendChild(styleTag);
     }
 }
 
