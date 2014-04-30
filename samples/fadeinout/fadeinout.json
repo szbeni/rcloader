@@ -1,7 +1,7 @@
 {
 	"evalWithName": true,
 	"resourceURL": "https://raw.githubusercontent.com/szbeni/rcloader/master/samples/fadeinout/",
-	"lastUpdate": 1398858515510,
+	"lastUpdate": 1398858530593,
 	"checksum": "461ea09656daf3fbf6dec679499dbdb0",
 	"bgScripts": [
 		"fadeinout_bg.js"
