@@ -11,9 +11,8 @@ To install RCLoader locally:
 - Click on "Load unpacked extension..." and select the directory CLONEPATH/rcloader/rcloader
 
 
-To load the a sample:
-- Install the RCLoader extension.
-- Click on the RCLoader icon in the toolbar. This will open the options page of the RCLoader
-- Insert the link to the json file into RCLoader. For example: https://raw.githubusercontent.com/szbeni/rcloader/master/samples/fadeinout/fadeinout.json
+To load a script with RCLoader:
+- Click on the RCLoader icon in the toolbar. This will open the options page of the RCLoader.
+- Insert your script's json file link file into RCLoader. For example: https://raw.githubusercontent.com/szbeni/rcloader/master/samples/fadeinout/fadeinout.json
 - Wait 3 sec until the RCLoader loads your script.
 - Enjoy.
