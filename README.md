@@ -14,5 +14,5 @@ To install RCLoader locally:
 To load a script with RCLoader:
 - Click on the RCLoader icon in the toolbar. This will open the options page of the RCLoader.
 - Insert your script's json file link file into RCLoader. For example: https://raw.githubusercontent.com/szbeni/rcloader/master/samples/fadeinout/fadeinout.json
-- Wait 3 sec until the RCLoader loads your script.
+- Wait 3 sec until RCLoader loads your script.
 - Enjoy.
