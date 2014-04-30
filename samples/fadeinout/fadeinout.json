@@ -1,0 +1,12 @@
+{
+	"resourceURL": "https://raw.githubusercontent.com/szbeni/rcloader/master/samples/fadeinout/",
+	"lastUpdate": 1398854376548,
+	"checksum": "2591563351bcc8e76d4425c2b622016c",
+	"bgScripts": [
+		"fadeinout_bg.js"
+	],
+	"contentScripts": [
+		"fadeinout_content.js"
+	],
+	"otherFiles": []
+}
