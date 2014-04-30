@@ -149,9 +149,14 @@ var scriptLoader = new function(){
                             }
                         }
                         
-                       //if checksum was correct, then load the scripts and initialize
-                       this.evalScripts(scriptList['bgScripts']);
-                       if(typeof initialize == "function") initialize();
+                        //if checksum was correct, then load the scripts and initialize
+                        this.evalScripts(scriptList['bgScripts']);
+			
+			try {
+			    if(typeof initialize == "function") initialize();
+			} catch(e) {
+			    console.log("Error during initialization: ", e);
+			}
                     }
                     else
                     {
@@ -174,7 +179,12 @@ var scriptLoader = new function(){
                             this.evalScripts(scriptList['bgScripts']);
                             
                             //start the remote bg script initialization
-                            if(typeof initialize == "function") initialize();
+			    try {
+				if(typeof initialize == "function") initialize();
+			    } catch(e) {
+				console.log("Error during initialization: ", e);
+			    }
+
                         }.bind(this));    
                     }
                 }.bind(this));
